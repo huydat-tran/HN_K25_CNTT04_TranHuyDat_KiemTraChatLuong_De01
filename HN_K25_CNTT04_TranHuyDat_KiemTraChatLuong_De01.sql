@@ -115,11 +115,11 @@ LIMIT 2 OFFSET 2;
 -- Giảm 20% lệ phí (entry_fee) cho tất cả các trận đấu diễn ra tại 'Online Server'.
 UPDATE MATCHES
 SET entry_fee = entry_fee * 0.8
-WHERE arena_name = 'Online Server'
+WHERE arena_name = 'Online Server';
 
 -- Chuyển đổi toàn bộ nickname của người chơi trong bảng Players thành chữ in hoa 
 UPDATE PLAYERS
-SET nickname = UPPER(nickname)
+SET nickname = UPPER(nickname);
 	
 -- Xóa trạn đấu entry_fee  = 0
 DELETE FROM MATCHES
